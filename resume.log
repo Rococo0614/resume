@@ -767,15 +767,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 
 (body
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 29.
+(Font)              <10.95> on input line 28.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 29.
+(Font)              <8> on input line 28.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 29.
+(Font)              <6> on input line 28.
 ) [1
 
 ] (resume.aux)
 Package rerunfilecheck Info: File `resume.out' has not changed.
-(rerunfilecheck)             Checksum: 756D46635004D8CEED522312B7436686;273.
+(rerunfilecheck)             Checksum: B095FA25C6D1BA12451103D724F48584;305.
  )
-Output written on resume.xdv (1 page, 33956 bytes).
+Output written on resume.xdv (1 page, 29288 bytes).
