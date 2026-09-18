@@ -1,0 +1,56 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 姜睿 | 视觉感知 / 多模态理解 / 端侧落地
+% 其中 LingBot-VLA 项目需完成实验后再保留并替换 [待填] 内容。
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\name{姜睿}
+\contactInfo{17726952709}{Jru0614@163.com}{甘肃兰州}
+
+\logosection{\faGraduationCap}{教育经历}
+\datedline{\textbf{清华大学｜电子信息｜硕士}}{2025.09 -- 2028.06}
+\datedline{\textbf{哈尔滨工业大学｜精密仪器｜本科}}{2020.09 -- 2024.06}
+\begin{itemize}
+  \item 五四表彰优秀学生、两次人民奖学金；大创国家级一等奖。
+  \item 第八届智能车竞赛智能视觉组北部赛区三等奖；第九届光电设计竞赛东北赛区二等奖。
+\end{itemize}
+
+\logosection{\faSuitcase}{视觉感知实习与项目}
+\datedline{\textbf{vivo｜影像效果工程师}}{2026.06 -- 2026.08}
+\datedline{\textbf{LiveAgent｜空间视觉理解与端侧 SDK}}{}
+\begin{itemize}
+  \item 面向 Live 相册空间拼贴，参与搭建从视觉样例解析可复用空间模板的框架；由 VLM 理解布局与素材关系，调用分割、追踪模型提取素材区域、主体信息及空间约束。
+  \item 用户选择新素材后，根据主体语义、位置、层级和组合关系完成自动布局；集成滤镜、文本及 DiT 变换，Kotlin 化并封装移动端 SDK，打通视觉解析到效果执行闭环。
+  \item \textbf{待补充评测}：模板 Schema 合法率 \textbf{[待填]}、素材/槽位匹配准确率 \textbf{[待填]}、布局人工修改率 \textbf{[待填]}。
+\end{itemize}
+
+\datedline{\textbf{算能科技｜芯片规划工程师}}{2026.01 -- 2026.05}
+\datedline{\textbf{单目深度感知模型端侧部署与推理优化}}{}
+\begin{itemize}
+  \item 在 CV186 Mars3（BM1684X、UMA 架构）部署单目深度估计模型，将 RGB 图像转化为稠密深度表征；负责模型转换、算子适配、量化和端侧推理优化。
+  \item 裁剪 Mask/法线分支，固化位置编码与 Token 长度，改写注意力计算；改造 GroupNorm/LayerNorm、Resample，在 C++ 侧隔离异常值并融合拼接操作，稳定深度图输出。
+  \item 按节点敏感度设计 FP16/INT8 混合量化；参数量 300M$\rightarrow$85M，显存 1.9GB$\rightarrow$0.9GB，带宽 30GB/s$\rightarrow$5GB/s，在 17W 约束下实现 1080P@30fps 深度感知。
+  \item \textbf{待补充感知评测}：量化前后 Abs Rel \textbf{[待填]}、RMSE \textbf{[待填]}、边缘深度误差 \textbf{[待填]}、无效点比例 \textbf{[待填]}。
+\end{itemize}
+
+\datedline{\textbf{可靠视觉输入｜图像质量评估与自动化 PQ 调参}}{}
+\begin{itemize}
+  \item 面向视觉感知输入质量，构建支持 JPEG 对比图与 RAW 图的分析流程；由 VLM 解析夜景、逆光、灯光、人像等环境与内容组合，输出结构化场景标签。
+  \item 结合场景标签、输入类型和 PQ 问题，从 RAG 知识库及 JSON 参数配置召回 Top-$k$ 候选，串联样本管理、问题归因、参数建议和回归验证。
+  \item \textbf{待补充下游验证}：不同 ISP/PQ 配置下深度/分割/追踪指标变化 \textbf{[待填]}，典型场景问题修复率 \textbf{[待填]}。
+\end{itemize}
+
+% 完成 RoboTwin/LingBot-VLA 实验后启用本项目，并替换所有 [待填]。
+\datedline{\textbf{[完成后启用] LingBot-VLA｜视觉输入鲁棒性与具身感知}}{[时间]}
+\begin{itemize}
+  \item 基于 LingBot-VLA 2.0 与 RoboTwin 2.0，评估光照、曝光、噪声、模糊和背景变化对视觉理解与动作执行的影响，建立 clean/randomized 对照基线。
+  \item 引入深度/分割/目标区域等视觉表征或输入增强，分析“输入质量—空间感知—动作成功率”链路；在 \textbf{[任务数]} 个任务上，clean2random 成功率由 \textbf{[A]} 提升至 \textbf{[B]}。
+\end{itemize}
+
+\logosection{\faCogs}{专业技能}
+\begin{itemize}
+  \item \textbf{视觉感知}：单目深度估计、图像分割、目标追踪、场景语义解析；了解空间关系、时序关联、遮挡和视觉鲁棒性评测。
+  \item \textbf{具身与多模态}：PyTorch、Hugging Face Transformers、VLM、RAG/结构化输出、DiT；\textbf{[完成后补]} LingBot-VLA/RoboTwin、动作预测与仿真评测。
+  \item \textbf{端侧落地}：PyTorch/ONNX 导出、计算图改写、FP16/INT8 量化、算能 TPU/运行时、QNN、MLIR、C++ 前后处理和 Kotlin SDK。
+  \item \textbf{成像与工程}：相机成像、ISP/PQ、JPEG/RAW、Docker、Git；具备样本管理、批量测试、日志记录和回归验证经验。
+  \item \textbf{其他信息}：英语 CET-6；可实习半年以上。
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

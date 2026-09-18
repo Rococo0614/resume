@@ -1,0 +1,56 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 姜睿 | 端侧模型部署 / 推理优化 / AI 编译
+% 其中 LingBot-VLA 项目需完成实验后再保留并替换 [待填] 内容。
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\name{姜睿}
+\contactInfo{17726952709}{Jru0614@163.com}{甘肃兰州}
+
+\logosection{\faGraduationCap}{教育经历}
+\datedline{\textbf{清华大学｜电子信息｜硕士}}{2025.09 -- 2028.06}
+\datedline{\textbf{哈尔滨工业大学｜精密仪器｜本科}}{2020.09 -- 2024.06}
+\begin{itemize}
+  \item 五四表彰优秀学生、两次人民奖学金；大创国家级一等奖。
+  \item 第八届智能车竞赛智能视觉组北部赛区三等奖；第九届光电设计竞赛东北赛区二等奖。
+\end{itemize}
+
+\logosection{\faSuitcase}{端侧 AI 实习与项目}
+\datedline{\textbf{算能科技｜芯片规划工程师}}{2026.01 -- 2026.05}
+\datedline{\textbf{单目深度模型部署、量化与推理优化}}{}
+\begin{itemize}
+  \item 在 CV186 Mars3（BM1684X、UMA 架构）完成 300M 参数级单目深度模型从 PyTorch/ONNX 到 TPU 运行时的转换、算子适配和性能优化。
+  \item 裁剪 Mask/法线分支，固化位置编码与 Token 长度，将注意力改写为显式 $QK^T$；改造归一化与 Resample 模块，在 C++ 侧完成异常值隔离和拼接融合。
+  \item 按节点敏感度设计 FP16/INT8 混合量化；参数量 300M$\rightarrow$85M，显存 1.9GB$\rightarrow$0.9GB，带宽 30GB/s$\rightarrow$5GB/s，在 17W 约束下实现 1080P@30fps。
+  \item \textbf{待补充 Profiling/精度结果}：端到端延迟 \textbf{[A]}$\rightarrow$\textbf{[B]}，p95 延迟 \textbf{[待填]}，峰值内存 \textbf{[待填]}，量化后 Abs Rel/RMSE 变化 \textbf{[待填]}。
+\end{itemize}
+
+\datedline{\textbf{vivo｜影像效果工程师}}{2026.06 -- 2026.08}
+\datedline{\textbf{LiveAgent｜VLM/DiT 端侧部署与 Kotlin SDK}}{}
+\begin{itemize}
+  \item 将空间拼贴样例解析、素材理解、自动布局和效果执行架构翻译为 Kotlin，封装移动端 SDK；完成模块接口、数据传递、滤镜/文本/DiT 玩法和端侧功能联调。
+  \item 针对规划中的 VLM“大脑”和 DiT“工具”完成量化部署与推理接口适配，打通“视觉解析—模型调用—布局执行—效果输出—SDK 调用”闭环。
+  \item \textbf{待补充端侧结果}：模型格式/量化方案 \textbf{[待填]}，单次推理时延 \textbf{[待填]}，峰值内存 \textbf{[待填]}，端到端调用耗时 \textbf{[待填]}。
+\end{itemize}
+
+\datedline{\textbf{可靠视觉输入｜自动化 PQ 分析与参数工具}}{}
+\begin{itemize}
+  \item 支持 JPEG 对比图与 RAW 图输入，串联样本管理、图像解析、VLM 场景标签、RAG 检索、JSON 参数建议和回归验证，完成自动化调参工具落地。
+  \item 将 VLM 用于天黑、逆光、灯光、人像等场景语义解析，将图像问题映射到可执行的 JSON 参数候选，避免让语言模型直接替代像素级质量评价。
+  \item \textbf{待补充工具结果}：覆盖 \textbf{[场景数]} 类场景，单轮测试耗时 \textbf{[A]}$\rightarrow$\textbf{[B]}，人工调参步骤减少 \textbf{[待填]}。
+\end{itemize}
+
+% 完成 RoboTwin/LingBot-VLA 实验后启用本项目，并替换所有 [待填]。
+\datedline{\textbf{[完成后启用] LingBot-VLA｜VLA 仿真部署与推理优化}}{[时间]}
+\begin{itemize}
+  \item 基于 LingBot-VLA 2.0 与 RoboTwin 2.0 搭建 VLA 推理和仿真评测链路，完成模型服务、仿真环境、任务调度、日志和视频结果管理。
+  \item 评估 FP32/BF16、action chunk、视觉输入增强和模型服务并发对显存、延迟及任务成功率的影响；在 \textbf{[任务数]} 个任务上实现 \textbf{[成功率/时延/显存]} 结果。
+\end{itemize}
+
+\logosection{\faCogs}{专业技能}
+\begin{itemize}
+  \item \textbf{模型部署}：PyTorch、ONNX/ONNX Runtime、算能 TPU/运行时、QNN、MLIR；具备模型导出、计算图改写、算子适配和运行时验证经验。
+  \item \textbf{推理优化}：FP16/INT8 混合量化、量化敏感度分析、精度回归、算子融合、内存/带宽优化、端侧 Profiling；了解 CPU/NPU 异构执行和 fallback。
+  \item \textbf{编译与工程}：了解 MLIR lowering、计算图转换和端侧编译流程；C++、Python、Kotlin、Docker、Git，具备移动端 SDK 和批量测试开发经验。
+  \item \textbf{视觉与多模态}：单目深度、分割、追踪、VLM、RAG、DiT；具备相机成像、ISP/PQ、JPEG/RAW 图像链路实践。
+  \item \textbf{其他信息}：英语 CET-6；可实习半年以上。
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
